@@ -85,6 +85,14 @@
 }
 
 @media (max-width: 769px) {
+    .header {
+        &__logo {
+            width: 150px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
     .advantages {
         padding: 10px;
         .title {
@@ -105,16 +113,29 @@
     .consultation {
         padding: 10px;
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 577px) {
     .header {
+        flex-direction: column;
         &__logo {
-            width: 170px;
+            width: 150px;
+            margin-bottom: 10px;
         }
         &__official {
             span {
                 font-size: 15px;
+            }
+        }
+        &__contacts {
+            margin-top: 10px;
+            button {
+                margin-top: 10px;
             }
         }
         &__phone {
@@ -127,15 +148,23 @@
     }
     .promo {
         min-height: 375px;
+        &__wrapper {
+            align-items: center;
+        }
         &__header {
             font-size: 22px;
             line-height: 10px;
         }
         &__subheader {
             font-size: 15px;
+            text-align: center;
         }
         &__icon {
             font-size: 13px;
+            width: 100px;
+        }
+        &__icons {
+            width: 100%;
         }
         .button {
             &_main {
@@ -146,6 +175,20 @@
         &__link {
             margin-top: 14px;
             font-size: 15px;
+        }
+    }
+    .consultation {
+        .title {
+            &_left {
+                font-size: 20px;
+            }
+        }
+
+    }
+    .carousel {
+        display: none;
+        &__inner {
+            width: 100px;
         }
     }
     .advantages {
@@ -170,5 +213,14 @@
             margin-top: 10px;
             font-size: 12px;
         }
+    }
+    .catalog {
+        &__tab {
+            font-size: 10px;
+            &_active {
+                font-size: 10px;
+            }
+        }
+        
     }
 }
