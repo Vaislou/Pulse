@@ -215,12 +215,41 @@
         }
     }
     .catalog {
-        &__tab {
+        ul.catalog__tabs {
+            margin-top: 20px;
+            flex-direction: column;
+        }
+        li.catalog__tab {
             font-size: 10px;
+            margin-bottom: 10px;
+        }
+        &__content {
+            margin-top: 10px;
             &_active {
-                font-size: 10px;
+                margin: 10px auto;
             }
         }
-        
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            img {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+        }
+        &__text {
+            text-align: center;
+            font-size: 12px;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        width: 100%;
+        &__info {
+            max-width: 100%;
+        }
     }
 }
